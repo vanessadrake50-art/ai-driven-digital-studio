@@ -1,57 +1,57 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, TrendingUp, Users, Zap } from "lucide-react";
+import { ExternalLink, Heart, Star, Award } from "lucide-react";
 
 const Projects = () => {
-  const projects = [
+  const collections = [
     {
-      title: "AI-Powered E-commerce Platform",
-      description: "Built a complete e-commerce solution with AI-driven product recommendations, automated customer support, and predictive analytics dashboard.",
-      results: [
-        "40% increase in conversion rates",
-        "60% reduction in support tickets",
-        "250% improvement in customer retention"
+      title: "Traditional Kente Collection",
+      description: "Vibrant sandals featuring authentic Kente patterns with hand-woven straps and genuine leather soles. Each pair celebrates the rich Ghanaian textile heritage.",
+      highlights: [
+        "Authentic Kente patterns from Ghana",
+        "Hand-woven cotton straps",
+        "Premium leather construction"
       ],
-      technologies: ["React", "Node.js", "OpenAI API", "Stripe", "MongoDB"],
-      icon: TrendingUp,
+      materials: ["Kente Cotton", "Genuine Leather", "Natural Dyes", "Hand-carved Buckles"],
+      icon: Star,
+      gradient: "from-yellow-500 to-orange-600"
+    },
+    {
+      title: "Maasai Beaded Elegance",
+      description: "Stunning slippers adorned with traditional Maasai beadwork, combining comfort with the timeless beauty of East African artistry.",
+      highlights: [
+        "Traditional Maasai beadwork",
+        "Comfortable cushioned soles",
+        "Cultural authenticity guaranteed"
+      ],
+      materials: ["Glass Beads", "Soft Leather", "Cotton Lining", "Natural Rubber"],
+      icon: Heart,
+      gradient: "from-red-500 to-pink-600"
+    },
+    {
+      title: "Ankara Print Casual Wear",
+      description: "Contemporary slip-on sandals featuring bold Ankara prints, perfect for modern lifestyles while honoring African textile traditions.",
+      highlights: [
+        "Contemporary Ankara designs",
+        "All-day comfort design",
+        "Versatile style options"
+      ],
+      materials: ["Ankara Fabric", "Memory Foam", "Rubber Soles", "Breathable Mesh"],
+      icon: Award,
       gradient: "from-blue-500 to-purple-600"
     },
     {
-      title: "Marketing Automation Suite",
-      description: "Developed a comprehensive marketing automation platform that integrates AI content generation, email campaigns, and performance analytics.",
-      results: [
-        "300% increase in lead generation",
-        "50% reduction in content creation time",
-        "85% improvement in email open rates"
+      title: "Mud Cloth Heritage Series",
+      description: "Limited edition sandals showcasing the ancient art of Malian mud cloth patterns, each pair a unique piece of wearable African art.",
+      highlights: [
+        "Authentic mud cloth patterns",
+        "Limited edition designs",
+        "Museum-quality artistry"
       ],
-      technologies: ["TypeScript", "Zapier", "GPT-4", "SendGrid", "Analytics APIs"],
-      icon: Zap,
-      gradient: "from-green-500 to-teal-600"
-    },
-    {
-      title: "SaaS Growth Dashboard",
-      description: "Created an AI-enhanced analytics dashboard for SaaS companies to track user behavior, predict churn, and optimize pricing strategies.",
-      results: [
-        "25% reduction in customer churn",
-        "180% increase in upsell revenue",
-        "Real-time predictive insights"
-      ],
-      technologies: ["Next.js", "Python", "TensorFlow", "PostgreSQL", "Vercel"],
-      icon: Users,
-      gradient: "from-orange-500 to-red-600"
-    },
-    {
-      title: "Agency Workflow Optimizer",
-      description: "Built a custom project management tool with AI task prioritization, automated reporting, and client communication features.",
-      results: [
-        "70% reduction in project delays",
-        "45% increase in team productivity",
-        "90% client satisfaction rate"
-      ],
-      technologies: ["React", "Express.js", "AI APIs", "WebSockets", "Cloud Functions"],
-      icon: TrendingUp,
-      gradient: "from-purple-500 to-pink-600"
+      materials: ["Mud Cloth", "Vegetable-tanned Leather", "Organic Cotton", "Cork Footbed"],
+      icon: Star,
+      gradient: "from-brown-500 to-amber-600"
     }
   ];
 
@@ -59,54 +59,54 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gradient-secondary">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="secondary" className="mb-4">Featured Projects</Badge>
+          <Badge variant="secondary" className="mb-4">Our Collections</Badge>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-            Real Solutions, Real Results
+            Authentic African Footwear
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Each project represents a unique challenge solved with innovative thinking 
-            and cutting-edge technology implementation
+            Each collection tells a unique story of African heritage, combining traditional 
+            craftsmanship with modern comfort and style
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
+          {collections.map((collection, index) => (
             <Card key={index} className="overflow-hidden shadow-medium hover:shadow-large transition-all duration-300 animate-scale-in group">
-              <div className={`h-2 bg-gradient-to-r ${project.gradient}`}></div>
+              <div className={`h-2 bg-gradient-to-r ${collection.gradient}`}></div>
               
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
-                  <div className={`p-3 rounded-lg bg-gradient-to-r ${project.gradient}`}>
-                    <project.icon className="w-6 h-6 text-white" />
+                  <div className={`p-3 rounded-lg bg-gradient-to-r ${collection.gradient}`}>
+                    <collection.icon className="w-6 h-6 text-white" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-xl font-heading font-semibold mb-2 group-hover:text-primary transition-colors">
-                      {project.title}
+                      {collection.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      {project.description}
+                      {collection.description}
                     </p>
                   </div>
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="font-semibold mb-3 text-primary">Key Results:</h4>
+                  <h4 className="font-semibold mb-3 text-primary">Collection Highlights:</h4>
                   <ul className="space-y-2">
-                    {project.results.map((result, resultIndex) => (
-                      <li key={resultIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
+                    {collection.highlights.map((highlight, highlightIndex) => (
+                      <li key={highlightIndex} className="flex items-center gap-2 text-sm text-muted-foreground">
                         <div className="w-2 h-2 bg-primary rounded-full"></div>
-                        {result}
+                        {highlight}
                       </li>
                     ))}
                   </ul>
                 </div>
 
                 <div className="mb-6">
-                  <h4 className="font-semibold mb-3">Technologies Used:</h4>
+                  <h4 className="font-semibold mb-3">Premium Materials:</h4>
                   <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech, techIndex) => (
-                      <Badge key={techIndex} variant="outline" className="text-xs">
-                        {tech}
+                    {collection.materials.map((material, materialIndex) => (
+                      <Badge key={materialIndex} variant="outline" className="text-xs">
+                        {material}
                       </Badge>
                     ))}
                   </div>
@@ -115,11 +115,11 @@ const Projects = () => {
                 <div className="flex gap-3">
                   <Button variant="outline" size="sm" className="group">
                     <ExternalLink className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    View Live
+                    View Collection
                   </Button>
                   <Button variant="ghost" size="sm" className="group">
-                    <Github className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                    Source
+                    <Heart className="w-4 h-4 group-hover:scale-110 transition-transform" />
+                    Add to Wishlist
                   </Button>
                 </div>
               </CardContent>
@@ -129,13 +129,13 @@ const Projects = () => {
 
         <div className="text-center mt-16">
           <Card className="p-8 shadow-medium max-w-2xl mx-auto">
-            <h3 className="text-2xl font-heading font-semibold mb-4">Want to See More?</h3>
+            <h3 className="text-2xl font-heading font-semibold mb-4">Custom Designs Available</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              These are just highlights from my portfolio. I'd love to discuss how 
-              I can create similar results for your business or project.
+              Looking for something unique? We also create custom designs that reflect your 
+              personal style while honoring African craftsmanship traditions.
             </p>
             <Button variant="cta" size="lg">
-              Let's Discuss Your Project
+              Discuss Custom Order
             </Button>
           </Card>
         </div>

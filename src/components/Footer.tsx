@@ -1,17 +1,17 @@
 import { Badge } from "@/components/ui/badge";
-import { Heart, Mail, Phone, MapPin, Linkedin, Github, Twitter } from "lucide-react";
+import { Heart, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Linkedin, href: "https://linkedin.com/in/alexrodriguez", label: "LinkedIn" },
-    { icon: Github, href: "https://github.com/alexrodriguez", label: "GitHub" },
-    { icon: Twitter, href: "https://twitter.com/alexrodriguez", label: "Twitter" }
+    { icon: Instagram, href: "https://instagram.com/vanessadrake.sandals", label: "Instagram" },
+    { icon: Facebook, href: "https://facebook.com/vanessadrakesandals", label: "Facebook" },
+    { icon: Twitter, href: "https://twitter.com/vanessadrake", label: "Twitter" }
   ];
 
   const quickLinks = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: "Our Story", href: "#about" },
+    { name: "Craftsmanship", href: "#skills" },
+    { name: "Collections", href: "#projects" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -21,15 +21,15 @@ const Footer = () => {
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Brand Section */}
           <div>
-            <h3 className="font-heading font-bold text-2xl mb-4">Alex Rodriguez</h3>
+            <h3 className="font-heading font-bold text-2xl mb-4">Vanessa Drake</h3>
             <p className="text-background/80 mb-6 leading-relaxed">
-              Digital marketing strategist specializing in AI-powered business solutions. 
-              Helping startups and agencies innovate, scale, and achieve extraordinary results.
+              Celebrating African heritage through handcrafted sandals and slippers. 
+              Each pair tells a story of tradition, quality, and authentic African artistry.
             </p>
             <div className="flex flex-wrap gap-2">
-              <Badge className="bg-primary text-primary-foreground">AI Expert</Badge>
-              <Badge className="bg-primary text-primary-foreground">Web Developer</Badge>
-              <Badge className="bg-primary text-primary-foreground">Marketing Strategist</Badge>
+              <Badge className="bg-primary text-primary-foreground">Authentic Craftsmanship</Badge>
+              <Badge className="bg-primary text-primary-foreground">African Heritage</Badge>
+              <Badge className="bg-primary text-primary-foreground">Premium Quality</Badge>
             </div>
           </div>
 
@@ -46,6 +46,18 @@ const Footer = () => {
                   {link.name}
                 </a>
               ))}
+              <a
+                href="#"
+                className="block text-background/80 hover:text-background transition-colors"
+              >
+                Size Guide
+              </a>
+              <a
+                href="#"
+                className="block text-background/80 hover:text-background transition-colors"
+              >
+                Care Instructions
+              </a>
             </div>
           </div>
 
@@ -55,15 +67,15 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-background/80">
                 <Mail className="w-4 h-4" />
-                <span>alex@alexrodriguez.dev</span>
+                <span>vanessadrake50@gmail.com</span>
               </div>
               <div className="flex items-center gap-3 text-background/80">
                 <Phone className="w-4 h-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>0598230143</span>
               </div>
               <div className="flex items-center gap-3 text-background/80">
                 <MapPin className="w-4 h-4" />
-                <span>San Francisco, CA</span>
+                <span>Ghana, West Africa</span>
               </div>
             </div>
 
@@ -86,12 +98,12 @@ const Footer = () => {
         <div className="border-t border-background/20 pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
             <p className="text-background/60 text-sm">
-              © 2024 Alex Rodriguez. All rights reserved.
+              © 2024 Vanessa Drake. All rights reserved.
             </p>
             <div className="flex items-center gap-2 text-background/60 text-sm">
-              <span>Made with</span>
+              <span>Handcrafted with</span>
               <Heart className="w-4 h-4 text-red-500 fill-current" />
-              <span>using React & AI</span>
+              <span>in Africa</span>
             </div>
           </div>
         </div>

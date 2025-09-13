@@ -10,26 +10,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "alex@alexrodriguez.dev",
-      action: "mailto:alex@alexrodriguez.dev"
+      value: "vanessadrake50@gmail.com",
+      action: "mailto:vanessadrake50@gmail.com"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      action: "tel:+15551234567"
+      value: "0598230143",
+      action: "tel:0598230143"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
+      value: "Ghana, West Africa",
       action: "#"
     },
     {
       icon: Linkedin,
-      label: "LinkedIn",
-      value: "/in/alexrodriguez",
-      action: "https://linkedin.com/in/alexrodriguez"
+      label: "Instagram",
+      value: "@vanessadrake.sandals",
+      action: "https://instagram.com/vanessadrake.sandals"
     }
   ];
 
@@ -39,11 +39,11 @@ const Contact = () => {
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="secondary" className="mb-4">Get In Touch</Badge>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-            Let's Create Something Amazing
+            Let's Create Beautiful Footwear Together
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to transform your digital presence? I'm here to help bring your vision to life 
-            with innovative solutions and proven strategies.
+            Ready to experience authentic African craftsmanship? Whether you have questions about our 
+            collections or want to discuss custom designs, I'm here to help.
           </p>
         </div>
 
@@ -75,13 +75,14 @@ const Contact = () => {
                 </div>
                 
                 <div>
-                  <label className="text-sm font-medium mb-2 block">Project Type</label>
+                  <label className="text-sm font-medium mb-2 block">Order Type</label>
                   <select className="w-full p-3 border border-input rounded-md shadow-soft bg-background">
-                    <option>AI Implementation</option>
-                    <option>Web Development</option>
-                    <option>Digital Marketing</option>
-                    <option>Automation Solutions</option>
-                    <option>Consultation</option>
+                    <option>Ready-to-Ship Collection</option>
+                    <option>Custom Design Request</option>
+                    <option>Wholesale Inquiry</option>
+                    <option>Sizing & Fit Questions</option>
+                    <option>Care & Maintenance</option>
+                    <option>Partnership Opportunity</option>
                     <option>Other</option>
                   </select>
                 </div>
@@ -89,7 +90,7 @@ const Contact = () => {
                 <div>
                   <label className="text-sm font-medium mb-2 block">Message</label>
                   <Textarea 
-                    placeholder="Tell me about your project goals, timeline, and how I can help..."
+                    placeholder="Tell me about your style preferences, size requirements, or any custom design ideas you have in mind..."
                     className="min-h-[120px] shadow-soft"
                   />
                 </div>
@@ -129,26 +130,26 @@ const Contact = () => {
 
             <Card className="shadow-medium">
               <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-heading font-semibold mb-4">Download My Resume</h3>
+                <h3 className="text-xl font-heading font-semibold mb-4">Download Our Catalog</h3>
                 <p className="text-muted-foreground mb-6">
-                  Get a detailed overview of my experience, skills, and achievements.
+                  Browse our complete collection with detailed photos, sizes, and pricing information.
                 </p>
                 <Button variant="outline" size="lg" className="group">
                   <Download className="w-4 h-4 group-hover:translate-y-1 transition-transform" />
-                  Download PDF Resume
+                  Download PDF Catalog
                 </Button>
               </CardContent>
             </Card>
 
             <Card className="shadow-medium">
               <CardContent className="p-8 text-center">
-                <h3 className="text-xl font-heading font-semibold mb-4">Schedule a Call</h3>
+                <h3 className="text-xl font-heading font-semibold mb-4">Schedule a Fitting</h3>
                 <p className="text-muted-foreground mb-6">
-                  Prefer to chat directly? Book a 30-minute consultation call.
+                  Book a virtual fitting session to ensure you get the perfect size and style.
                 </p>
                 <Button variant="hero" size="lg" className="group">
                   <Calendar className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                  Book Consultation
+                  Book Virtual Fitting
                 </Button>
               </CardContent>
             </Card>
@@ -157,16 +158,16 @@ const Contact = () => {
 
         <div className="mt-16 text-center">
           <Card className="p-8 shadow-medium max-w-3xl mx-auto">
-            <h3 className="text-2xl font-heading font-semibold mb-4">Response Time Guarantee</h3>
+            <h3 className="text-2xl font-heading font-semibold mb-4">Customer Service Promise</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              I typically respond to all inquiries within 4 hours during business days. 
-              For urgent projects, I'm available for same-day consultations.
+              I personally respond to all inquiries within 24 hours. For urgent orders or 
+              custom requests, same-day responses are available.
             </p>
             <div className="flex flex-wrap justify-center gap-2">
-              <Badge>Quick Response</Badge>
-              <Badge>Professional Service</Badge>
-              <Badge>Transparent Pricing</Badge>
-              <Badge>Long-term Partnership</Badge>
+              <Badge>Fast Response</Badge>
+              <Badge>Personal Service</Badge>
+              <Badge>Quality Guarantee</Badge>
+              <Badge>Authentic Craftsmanship</Badge>
             </div>
           </Card>
         </div>

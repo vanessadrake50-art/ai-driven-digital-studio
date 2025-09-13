@@ -1,32 +1,32 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Code, TrendingUp, Palette } from "lucide-react";
+import { Scissors, Users, Truck, Star } from "lucide-react";
 
 const Skills = () => {
   const skillCategories = [
     {
-      icon: Brain,
-      title: "AI & Automation",
-      skills: ["ChatGPT & Claude", "Midjourney & DALL-E", "Zapier & Make", "Custom GPTs", "AI Workflow Design", "Prompt Engineering"],
-      color: "from-purple-500 to-pink-500"
+      icon: Scissors,
+      title: "Craftsmanship",
+      skills: ["Traditional Techniques", "Premium Leather", "Beadwork & Embroidery", "Pattern Design", "Quality Control", "Sustainable Materials"],
+      color: "from-amber-500 to-orange-500"
     },
     {
-      icon: TrendingUp,
-      title: "Digital Marketing",
-      skills: ["SEO & Content Strategy", "Paid Media (Google/Meta)", "Email Marketing", "Marketing Analytics", "CRO & A/B Testing", "Social Media Strategy"],
-      color: "from-blue-500 to-cyan-500"
-    },
-    {
-      icon: Code,
-      title: "Web Development",
-      skills: ["React & TypeScript", "Node.js & APIs", "Database Design", "UI/UX Design", "Responsive Development", "Performance Optimization"],
+      icon: Users,
+      title: "Artisan Network",
+      skills: ["Skilled Craftspeople", "Fair Trade Practices", "Community Support", "Cultural Preservation", "Training Programs", "Partnership Building"],
       color: "from-green-500 to-emerald-500"
     },
     {
-      icon: Palette,
-      title: "Creative Tools",
-      skills: ["Figma & Adobe Creative", "Video Production", "Brand Development", "Motion Graphics", "Photography", "Content Creation"],
-      color: "from-orange-500 to-red-500"
+      icon: Truck,
+      title: "Business Operations",
+      skills: ["Global Shipping", "Inventory Management", "Customer Service", "Quality Assurance", "Order Processing", "Supply Chain"],
+      color: "from-blue-500 to-cyan-500"
+    },
+    {
+      icon: Star,
+      title: "Design Excellence",
+      skills: ["Traditional Patterns", "Modern Aesthetics", "Color Coordination", "Size Optimization", "Comfort Engineering", "Style Innovation"],
+      color: "from-purple-500 to-pink-500"
     }
   ];
 
@@ -34,13 +34,13 @@ const Skills = () => {
     <section id="skills" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="secondary" className="mb-4">Skills & Expertise</Badge>
+          <Badge variant="secondary" className="mb-4">Our Expertise</Badge>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-            Full-Stack Digital Solutions
+            From Artisan to Your Doorstep
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            From AI implementation to complete web applications, I deliver end-to-end solutions 
-            that drive measurable business results
+            Every step of our process combines traditional African craftsmanship with modern 
+            business practices to deliver exceptional footwear
           </p>
         </div>
 
@@ -71,23 +71,23 @@ const Skills = () => {
 
         <div className="mt-16 text-center">
           <Card className="p-8 shadow-medium max-w-4xl mx-auto">
-            <h3 className="text-2xl font-heading font-semibold mb-4">My Approach</h3>
+            <h3 className="text-2xl font-heading font-semibold mb-4">Our Commitment</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              I don't just use tools—I create systems. Every project combines strategic thinking 
-              with practical implementation, ensuring solutions that scale with your business.
+              We don't just make footwear—we preserve cultural heritage, support artisan communities, 
+              and deliver authentic African craftsmanship to customers worldwide.
             </p>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <p className="text-muted-foreground">AI Tools Mastered</p>
+                <div className="text-3xl font-bold text-primary mb-2">25+</div>
+                <p className="text-muted-foreground">Skilled Artisans</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">100+</div>
-                <p className="text-muted-foreground">Projects Delivered</p>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <p className="text-muted-foreground">Happy Customers</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">300%</div>
-                <p className="text-muted-foreground">Average ROI Increase</p>
+                <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                <p className="text-muted-foreground">Authentic Designs</p>
               </div>
             </div>
           </Card>

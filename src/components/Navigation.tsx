@@ -15,10 +15,10 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
-    { name: "Testimonials", href: "#testimonials" },
+    { name: "Our Story", href: "#about" },
+    { name: "Craftsmanship", href: "#skills" },
+    { name: "Collections", href: "#projects" },
+    { name: "Reviews", href: "#testimonials" },
     { name: "Contact", href: "#contact" }
   ];
 
@@ -29,7 +29,7 @@ const Navigation = () => {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           <div className="font-heading font-bold text-xl">
-            Alex Rodriguez
+            Vanessa Drake
           </div>
 
           {/* Desktop Navigation */}

@@ -1,23 +1,23 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Brain, Target, Zap } from "lucide-react";
+import { Heart, Palette, Award } from "lucide-react";
 
 const About = () => {
   const highlights = [
     {
-      icon: Brain,
-      title: "AI-First Approach",
-      description: "Leveraging cutting-edge AI tools to automate workflows and enhance decision-making"
+      icon: Heart,
+      title: "Heritage & Tradition",
+      description: "Preserving authentic African craftsmanship passed down through generations"
     },
     {
-      icon: Target,
-      title: "Results-Driven",
-      description: "Focused on measurable outcomes that directly impact business growth and ROI"
+      icon: Palette,
+      title: "Artisan Quality",
+      description: "Each piece is carefully handcrafted using premium materials and traditional techniques"
     },
     {
-      icon: Zap,
-      title: "Rapid Innovation",
-      description: "Quickly adapting to new technologies and market trends to stay ahead of the curve"
+      icon: Award,
+      title: "Cultural Authenticity",
+      description: "Celebrating African culture through genuine designs that honor our rich heritage"
     }
   ];
 
@@ -28,25 +28,25 @@ const About = () => {
           <div className="text-center mb-16 animate-fade-in">
             <Badge variant="secondary" className="mb-4">About Me</Badge>
             <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-              Where Strategy Meets Innovation
+              Where Heritage Meets Style
             </h2>
             <p className="text-xl text-muted-foreground">
-              Bridging the gap between traditional marketing wisdom and AI-powered possibilities
+              Bringing authentic African craftsmanship to modern footwear
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div className="animate-slide-up">
-              <h3 className="text-2xl font-heading font-semibold mb-4">My Journey</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-4">My Story</h3>
               <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-                Starting as a traditional marketer, I witnessed the digital revolution firsthand. 
-                When AI emerged as a game-changer, I didn't just adapt—I dove deep, becoming 
-                an early adopter who now helps businesses harness these powerful technologies.
+                Growing up surrounded by the rich textile traditions of Africa, I was inspired by 
+                the beautiful craftsmanship of local artisans. What started as admiration for 
+                traditional footwear became a passion for preserving and sharing these art forms.
               </p>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Today, I combine 8+ years of marketing expertise with cutting-edge AI tools 
-                to create solutions that aren't just innovative—they're practical, scalable, 
-                and deliver real business value.
+                Today, I work directly with skilled African artisans to create sandals and slippers 
+                that honor our heritage while meeting modern comfort and style standards. Each piece 
+                is a celebration of African culture and craftsmanship.
               </p>
             </div>
             
@@ -69,17 +69,17 @@ const About = () => {
 
           <div className="text-center">
             <Card className="p-8 shadow-medium">
-              <h3 className="text-2xl font-heading font-semibold mb-4">Ready to Innovate Together?</h3>
+              <h3 className="text-2xl font-heading font-semibold mb-4">Ready to Experience Authentic African Style?</h3>
               <p className="text-lg text-muted-foreground mb-6">
-                Whether you're a startup looking to disrupt or an agency seeking to modernize, 
-                I bring the perfect blend of strategic thinking and technical execution.
+                Whether you're looking for everyday comfort or special occasion elegance, 
+                our collection offers genuine African craftsmanship for the modern world.
               </p>
               <div className="flex flex-wrap justify-center gap-2">
-                <Badge>AI Strategy</Badge>
-                <Badge>Growth Marketing</Badge>
-                <Badge>Web Development</Badge>
-                <Badge>Process Automation</Badge>
-                <Badge>Data Analytics</Badge>
+                <Badge>Handcrafted</Badge>
+                <Badge>Premium Materials</Badge>
+                <Badge>Traditional Designs</Badge>
+                <Badge>Modern Comfort</Badge>
+                <Badge>Cultural Heritage</Badge>
               </div>
             </Card>
           </div>

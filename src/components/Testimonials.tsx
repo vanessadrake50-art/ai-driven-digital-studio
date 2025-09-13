@@ -5,34 +5,34 @@ import { Star, Quote } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Sarah Chen",
-      role: "Founder & CEO",
-      company: "TechFlow Startup",
-      content: "Alex transformed our marketing approach completely. His AI-powered strategies increased our lead generation by 300% while reducing costs by 40%. The ROI has been incredible.",
+      name: "Amara Johnson",
+      role: "Fashion Blogger",
+      company: "Style Africa",
+      content: "Vanessa's sandals are absolutely stunning! The Kente collection I ordered exceeded my expectations. The craftsmanship is impeccable and they're incredibly comfortable for all-day wear.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b647?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Marcus Thompson",
-      role: "Digital Director",
-      company: "Creative Agency Inc",
-      content: "Working with Alex was a game-changer. He didn't just deliver a website—he created a complete digital ecosystem that streamlined our entire client workflow. Exceptional results.",
+      name: "Kwame Asante",
+      role: "Cultural Center Director",
+      company: "African Heritage Foundation",
+      content: "These aren't just shoes - they're wearable art. Vanessa truly understands the importance of preserving African traditions while creating modern, stylish footwear. Outstanding quality!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "Lisa Rodriguez",
-      role: "VP of Marketing",
-      company: "GrowthScale",
-      content: "Alex's strategic thinking combined with his technical execution is rare. He delivered beyond expectations and continues to be a trusted advisor for all our digital initiatives.",
+      name: "Fatima Al-Rashid",
+      role: "Boutique Owner",
+      company: "Sahara Styles",
+      content: "My customers absolutely love Vanessa's designs. The authentic African patterns combined with modern comfort make these pieces bestsellers in my store. Excellent business partnership!",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
-      name: "David Park",
-      role: "Co-founder",
-      company: "InnovateLab",
-      content: "The automation solutions Alex implemented saved us 20+ hours per week. His attention to detail and ability to understand complex business needs is outstanding.",
+      name: "Michael Thompson",
+      role: "International Buyer",
+      company: "Global Fashion Co.",
+      content: "Working with Vanessa has been fantastic. Her attention to detail and commitment to authentic African craftsmanship sets her apart. These sandals sell out every time we stock them.",
       rating: 5,
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     }
@@ -42,13 +42,13 @@ const Testimonials = () => {
     <section id="testimonials" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="secondary" className="mb-4">Client Testimonials</Badge>
+          <Badge variant="secondary" className="mb-4">Customer Reviews</Badge>
           <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
-            Trusted by Industry Leaders
+            Loved by Customers Worldwide
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Don't just take my word for it—hear from the companies and leaders 
-            who've experienced transformational results
+            From fashion enthusiasts to cultural centers, discover why customers 
+            choose our authentic African footwear
           </p>
         </div>
 
@@ -89,23 +89,23 @@ const Testimonials = () => {
 
         <div className="mt-16 text-center">
           <Card className="p-8 shadow-medium max-w-3xl mx-auto gradient-secondary">
-            <h3 className="text-2xl font-heading font-semibold mb-4">Join the Success Stories</h3>
+            <h3 className="text-2xl font-heading font-semibold mb-4">Join Our Satisfied Customers</h3>
             <p className="text-lg text-muted-foreground mb-6">
-              Ready to achieve similar results? Let's discuss how I can help 
-              transform your digital presence and drive measurable growth.
+              Ready to experience authentic African craftsmanship? Join hundreds of satisfied 
+              customers who've made our sandals part of their style journey.
             </p>
             <div className="grid sm:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <p className="text-muted-foreground">Happy Clients</p>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
+                <p className="text-muted-foreground">Happy Customers</p>
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">98%</div>
-                <p className="text-muted-foreground">Client Satisfaction</p>
+                <p className="text-muted-foreground">Customer Satisfaction</p>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-                <p className="text-muted-foreground">Support Availability</p>
+                <div className="text-3xl font-bold text-primary mb-2">4.9★</div>
+                <p className="text-muted-foreground">Average Rating</p>
               </div>
             </div>
           </Card>
